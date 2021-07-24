@@ -6,7 +6,9 @@
 
 :root {
   --container-width: 100vw;
-  --container-height: 650px;
+  --container-height: calc(var(--square-height) * 3);
+  --square-width: calc(var(--container-width) / 6);
+  --square-height: var(--square-width);
 }
 
 body {

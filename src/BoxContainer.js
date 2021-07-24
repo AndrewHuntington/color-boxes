@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import ColorSquare from "./ColorSquare";
 import "./BoxContainer.css";
+import { randomIndex } from "./helpers";
 
 class BoxContainer extends Component {
-  constructor(props) {
-    super(props);
-    this.randomIndex = this.randomIndex.bind(this);
-  }
-
   static defaultProps = {
     colors: [
       "green",
@@ -28,34 +24,102 @@ class BoxContainer extends Component {
       "wheat",
       "violet",
       "peru",
+      "lightgreen",
+      "lightblue",
+      "lightgrey",
+      "lemonchiffon",
+      "honeydew",
+      "indigo",
+      "goldenrod",
+      "indianred",
+      "hotpink",
+      "khaki",
+      "darkolivegreen",
+      "darkblue",
+      "darkcyan",
+      "darkmagenta",
+      "darkorange",
+      "coral",
+      "chocolate",
     ],
   };
 
-  randomIndex() {
-    return Math.floor(Math.random() * this.props.colors.length);
-  }
-
   render() {
+    const numOfColors = this.props.colors.length;
     return (
       <div className="BoxContainer">
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
-        <ColorSquare color={this.props.colors[this.randomIndex()]} />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
+        <ColorSquare
+          color={this.props.colors[randomIndex(numOfColors)]}
+          colorList={this.props.colors}
+        />
       </div>
     );
   }
