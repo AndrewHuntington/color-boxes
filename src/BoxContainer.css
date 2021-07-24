@@ -1,0 +1,7 @@
+.BoxContainer {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+
+  min-width: var(--container-width);
+  height: var(--container-height);
+}

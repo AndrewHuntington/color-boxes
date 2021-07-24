@@ -1,0 +1,5 @@
+.ColorSquare {
+  width: calc(var(--container-width) / 6);
+  height: calc(var(--container-height) / 3);
+  border: 1px solid black;
+}
